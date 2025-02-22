@@ -5,7 +5,7 @@ import PermissionInstruction from "@components/PermissionInstruction";
 import {useStorage} from "@hooks/useStorage";
 import {ScanHistoryItem} from "@app/types/ScanHistoryItem";
 
-export const ScanQrScreen = () => {
+export const MobileScanQrScreen = () => {
     const [hasPermission, requestPermission] = useCameraPermissions();
     const [scannedData, setScannedData] = useState<string | null>(null);
     const [modalVisible, setModalVisible] = useState(false);
@@ -72,4 +72,4 @@ const styles = StyleSheet.create({
     camera: { flex: 1, width: "100%" },
 });
 
-export default ScanQrScreen;
+export default MobileScanQrScreen;

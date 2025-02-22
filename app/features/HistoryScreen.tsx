@@ -14,7 +14,7 @@ export const HistoryScreen = () => {
     );
 
     return (
-        <SafeAreaView className="flex-1 bg-white">
+        <SafeAreaView className="flex-1 bg-white lg:px-[400px]">
             <View className="p-5 flex-1">
                 <Text className="text-2xl font-bold mb-4">Scan History</Text>
 

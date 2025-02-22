@@ -3,7 +3,8 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { MaterialIcons } from "@expo/vector-icons";
 import {GenerateQrScreen} from "@features/GenerateQrScreen";
 import {HistoryScreen} from "@features/HistoryScreen";
-import {ScanQrScreen} from "@features/ScanQrScreen";
+import {MobileScanQrScreen} from "@features/MobileScanQrScreen";
+import ScanQrScreen from "@features/ScanQRScreen";
 
 export type RootTabParamList = {
     Scan: undefined;
@@ -39,6 +40,7 @@ export default function AppTabNavigation() {
                         alignItems: "center",
                         borderRadius: 30,
                         margin: 30,
+                        backgroundColor: "#fff9f9",
                         },
                     headerShown: false, // Hide header
                 })}
