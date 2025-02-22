@@ -43,8 +43,8 @@ export default function AppTabNavigation() {
                     headerShown: false, // Hide header
                 })}
             >
-                <Tab.Screen  name="Scan" component={ScanQrScreen} />
                 <Tab.Screen name="Generate" component={GenerateQrScreen} />
+                <Tab.Screen  name="Scan" component={ScanQrScreen} />
                 <Tab.Screen name="History" component={HistoryScreen} />
             </Tab.Navigator>
     );
